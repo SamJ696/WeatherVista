@@ -55,7 +55,7 @@ export default function Home() {
         />
         <div className="absolute bottom-32 ml-72">
           <p className="font-semibold text-5xl text-white">
-            Explore the world's weather
+            Explore the world&apos;s weather
           </p>
         </div>
         <div className="absolute bottom-24 ml-72">
