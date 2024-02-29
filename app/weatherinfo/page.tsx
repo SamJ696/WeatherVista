@@ -55,7 +55,7 @@ interface WeatherData {
   cod: number;
 }
 
-const Weatherinfo = () => {
+const weatherinfo = () => {
   const [data, setData] = useState<WeatherData | null>(null);
   const searchParams = useSearchParams();
   const city = searchParams.get("city");
@@ -200,4 +200,4 @@ const Weatherinfo = () => {
   );
 };
 
-export default Weatherinfo;
+export default weatherinfo;
