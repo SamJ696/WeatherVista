@@ -18,7 +18,7 @@ const Weatherinfo = () => {
   const weatherData = async () => {
     try {
       const response = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${process.env.NEXT_PUBLIC_APIKEY1}`
+        `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${process.env.NEXT_PUBLIC_APIKEY}`
       ).then((res) => res.json());
       if (response.cod === 200) {
         setData(response);
