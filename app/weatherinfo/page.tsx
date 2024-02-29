@@ -61,8 +61,6 @@ const Weatherinfo = () => {
   const city = searchParams.get("city");
   const country = searchParams.get("country");
 
-  console.log(process.env.NEXT_PUBLIC_APIKEY);
-
   const weatherData = async () => {
     try {
       const response = await fetch(
@@ -78,8 +76,6 @@ const Weatherinfo = () => {
       console.log("Error retrieving data", error);
     }
   };
-
-  console.log(data);
 
   useEffect(() => {
     weatherData();
