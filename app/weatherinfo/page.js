@@ -7,7 +7,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import { CiGlobe } from "react-icons/ci";
 import Image from "next/image";
 
-const weatherinfo = () => {
+const Weatherinfo = () => {
   const [data, setData] = useState(null);
   const searchParams = useSearchParams();
   const city = searchParams.get("city");
@@ -135,4 +135,4 @@ const weatherinfo = () => {
   );
 };
 
-export default weatherinfo;
+export default Weatherinfo;
